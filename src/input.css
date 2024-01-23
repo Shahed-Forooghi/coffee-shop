@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base { 
+    @font-face {
+        font-family: barlowBold;
+        src: local("Barlow"), url(../public/fonts/Barlow/Barlow-Bold.ttf) format(ttf);
+        font-display: swap;
+    }
+    @font-face {
+        font-family: barlowLight;
+        src: local("Barlow"), url(../public/fonts/Barlow/Barlow-Light.ttf) format(ttf);
+        font-display: swap;
+    }
+    @font-face {
+        font-family: barlowMedium;
+        src: local("Barlow"), url(../public/fonts/Barlow/Barlow-Medium.ttf) format(ttf);
+        font-display: swap;
+    }
+    
+}
