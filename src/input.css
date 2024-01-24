@@ -18,5 +18,9 @@
         src: local("Barlow"), url(../public/fonts/Barlow/Barlow-Medium.ttf) format(ttf);
         font-display: swap;
     }
-    
+    body { 
+        background-image: url("../images/headerBgDesktop.webp");
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
 }
