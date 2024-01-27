@@ -54,14 +54,12 @@
         <symbol id="chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
             <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
           </symbol>
-          
-          
     </svg>
 
     <main class="">
-        <header class="fixed top-9 left-0 right-0 w-[90%] h-24 flex pr-4 pl-10 py-5 justify-between items-center mx-auto backdrop-blur-[6px] bg-black/50 rounded-3xl">
-            <div class=" flex items-center  gap-x-9 h-14">
-                <div class="w-10">
+        <header class="fixed top-9 left-0 right-0 w-[98%] lg:w-[90%] h-24 hidden md:flex pr-4 pl-3 lg:pl-10 py-5 justify-between items-center mx-auto backdrop-blur-[6px] bg-black/50 rounded-3xl">
+            <div class=" flex items-center gap-x-6 h-14">
+                <div class="w-10 shrink-0">
                     <a href="#">
                         <svg class="h-10 w-10">
                             <use class="" href="#golden-coffee"></use>
@@ -69,11 +67,11 @@
                     </a>
                 </div>
                 <div class="">
-                    <ul class="h-full flex items-center gap-9 text-xl text-gray-300 child:leading-[56px]" >
+                    <ul class="h-full flex items-center gap-5 lg:gap-9 text-xl text-gray-300 child:leading-[56px]" >
                         <li class="text-orange-200"><a href="#">Home</a></li>
                         <li class="relative group">
                             <a href="#" class="group-hover:text-orange-300 transition-colors">Store</a>
-                            <ul class="absolute top-full bg-white space-y-4 opacity-0 invisible group-hover:opacity-100 transition-all group-hover:visible shadow-primary dark:bg-zinc-700 text-zinc-700 dark:text-white text-base border-t-4 border-orange-300 p-6 rounded-2xl w-52 child:inline-block child:transition-colors child-hover:text-orange-300">
+                            <ul class="absolute top-full bg-white space-y-4 opacity-0 invisible group-hover:opacity-100 transition-all delay-75 group-hover:visible shadow-primary dark:bg-zinc-700 text-zinc-700 dark:text-white text-base border-t-4 border-orange-300 p-6 rounded-2xl w-52 child:inline-block child:transition-colors child-hover:text-orange-300">
                                 <li><a href="#">Special Coffee</a></li>
                                 <li><a href="#">Special In The World</a></li>
                                 <li><a href="#">First class Coffee</a></li>
@@ -89,8 +87,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="h-full flex items-center gap-x-10">
-                <div class="flex items-center gap-5 ml-3 text-orange-200">
+            <div class="h-full flex items-center gap-x-4 lg:gap-x-8 xl:gap-x-10">
+                <div class="flex items-center gap-3 lg:gap-x-5 ml-3 text-orange-200">
                     <a id="darkmode-btn" href="#">
                         <svg class="w-7 h-9">
                             <use id="darkmode-icon" href="#moon"></use>
@@ -100,7 +98,7 @@
                         <svg class="w-7 h-9 cursor-pointer ">
                             <use href="#shopping-cart"></use>
                         </svg>
-                        <div class="flex flex-col absolute top-full p-5 w-[400px] right-0 bg-white shadow-primary opacity-0 invisible group-hover:opacity-100 transition-all group-hover:visible  dark:bg-zinc-700 text-zinc-700 dark:text-white text-base border-t-4 border-orange-300 rounded-2xl ">
+                        <div class="flex flex-col absolute top-full p-5 w-[400px] right-0 bg-white shadow-primary opacity-0 invisible group-hover:opacity-100 transition-all delay-75 group-hover:visible  dark:bg-zinc-700 text-zinc-700 dark:text-white text-base border-t-4 border-orange-300 rounded-2xl ">
                             <div class="flex justify-between items-center text-xs tracking-tighter">
                                 <span class="text-gray-300 font-medium tracking-wider">
                                     1 item
@@ -114,12 +112,10 @@
                             </div>
                             <div class="pb-1 mt-5 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5">
                                 <div class="flex gap-x-2.5">
-                                    <div class="flex w-30 h-30 justify-center items-center">
-                                        <img src="./images/p2.png" class="" alt="Product-pic">
-                                    </div>
+                                    <img src="./images/p2.png" class="w-30 h-30" alt="Product-pic">
                                     <div class="flex flex-col justify-around ">
-                                        <div class="">
-                                            <h3 class="text-zinc-700 dark:text-white font-BarlowBold text-lg font-bold line-clamp-2">Ben Mano Espresso coffee, Prisca model, 250 grams</h3>
+                                        <div class="line-clamp-2">
+                                            <h3 class="text-zinc-700 dark:text-white font-BarlowBold text-lg font-bold">Ben Mano Espresso coffee, Prisca model, 250 grams</h3>
                                         </div>
                                         <div class="flex flex-col">
                                             <span class="text-teal-600 dark:text-emerald-500 font-bold text-xs">25% OFF</span>
@@ -131,12 +127,10 @@
                                     </div>
                                 </div>
                                 <div class="flex gap-x-2.5">
-                                    <div class="flex w-30 h-30 justify-center items-center">
-                                        <img src="./images/p1.png" class="" alt="Product-pic">
-                                    </div>
+                                    <img src="./images/p1.png" class="w-30 h-30" alt="Product-pic">
                                     <div class="flex flex-col justify-around ">
-                                        <div class="">
-                                            <h3 class="text-zinc-700 dark:text-white font-BarlowBold text-lg font-bold line-clamp-2">Ben Mano Espresso coffee, Prisca model, 250 grams</h3>
+                                        <div class=" line-clamp-2">
+                                            <h3 class="text-zinc-700 dark:text-white font-BarlowBold text-lg font-bold">Ben Mano Espresso coffee, Prisca model, 250 grams</h3>
                                         </div>
                                         <div class="flex flex-col">
                                             <span class="text-teal-600 dark:text-emerald-500 font-bold text-xs">25% OFF</span>
@@ -149,7 +143,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="flex justify-between items-center mt-3 ">
+                            <div class="flex justify-between items-center mt-5 ">
                                 <div>
                                     <span class="text-gray-300 font-medium tracking-wider">amount payable</span>
                                     <div class="text-zinc-700 dark:text-white text-base font-bold">
@@ -157,7 +151,7 @@
                                         1.5
                                     </div>
                                 </div>
-                                <a href="#" class="bg-teal-600 p-2 rounded-md text-white">Sign Order</a>
+                                <a href="#" class="flex justify-center items-center w-[144px] h-14 bg-teal-600 dark:bg-emerald-500 hover:bg-teal-700 transition-colors dark:hover:bg-emerald-600 rounded-xl text-white">Sign Order</a>
                             </div>
                             
                         </div>
@@ -169,7 +163,7 @@
                         <svg class="w-7 h-9 text-orange-200">
                             <use href="#arrow-left-end-on-rectangle"></use>
                         </svg>
-                        <span>Sign In | Sign Up</span>
+                        <span class="hidden xl:inline-block">Sign In | Sign Up</span>
                     </a>
                 </div>
             </div>
