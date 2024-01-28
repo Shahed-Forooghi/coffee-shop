@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <title>coffee shop</title>
 </head>
 
-<body class="bg-gray-100 dark:bg-zinc-800">
+<body class="bg-gray-100 dark:bg-zinc-800 h-[2000px]">
     <svg class="hidden">
         <symbol id="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentcolor">
             <path
@@ -114,13 +114,16 @@
         <symbol id="shopping-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor">
             <path fill-rule="evenodd" d="M5 4a3 3 0 0 1 6 0v1h.643a1.5 1.5 0 0 1 1.492 1.35l.7 7A1.5 1.5 0 0 1 12.342 15H3.657a1.5 1.5 0 0 1-1.492-1.65l.7-7A1.5 1.5 0 0 1 4.357 5H5V4Zm4.5 0v1h-3V4a1.5 1.5 0 0 1 3 0Zm-3 3.75a.75.75 0 0 0-1.5 0v1a3 3 0 1 0 6 0v-1a.75.75 0 0 0-1.5 0v1a1.5 1.5 0 1 1-3 0v-1Z" clip-rule="evenodd" />
         </symbol>
+        <symbol id="curve" width="100" height="22" viewBox="0 0 100 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z"/>
+        </symbol>
+            
           
     </svg>
 
-    <main class="">
-        <!-- tablet and desktop header -->
-        <header
-            class="fixed top-9 left-0 right-0 w-[98%] lg:w-[90%] h-24 hidden md:flex pr-4 pl-3 lg:pl-10 py-5 justify-between items-center mx-auto backdrop-blur-[6px] bg-black/50 rounded-3xl">
+    <!-- tablet and desktop header -->
+    <header
+            class="fixed top-9 left-0 right-0 z-50 w-[98%] lg:w-[90%] h-24 hidden lg:flex pr-4 pl-3 lg:pl-10 py-5 justify-between items-center mx-auto backdrop-blur-[6px] bg-black/50 rounded-3xl">
             <div class=" flex items-center gap-x-6 h-14">
                 <div class="w-10 shrink-0">
                     <a href="#">
@@ -222,7 +225,7 @@
                                     </div>
                                 </div>
                                 <a href="#"
-                                    class="flex justify-center items-center w-[144px] h-14 bg-teal-600 dark:bg-emerald-500 hover:bg-teal-700 transition-colors dark:hover:bg-emerald-600 rounded-xl text-white">Sign
+                                    class="flex justify-center items-center w-[144px] h-14 bg-teal-600 dark:bg-emerald-500 hover:bg-teal-700 transition-colors dark:hover:bg-emerald-600 rounded-xl text-white">
                                     Order</a>
                             </div>
 
@@ -240,17 +243,16 @@
                 </div>
             </div>
 
-        </header>
+    </header>
 
-        <!-- mobile header -->
-
-        <header class="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700  ">
-            <div class=" flex flex-col gap-y-4">
+    <!-- mobile header -->
+    <header class="flex lg:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700  ">
+            <div id="hamburger-menu-btn" class=" flex flex-col gap-y-4">
                 <svg class="w-6 h-6 text-zinc-700 dark:text-white">
                     <use href="#bars-3"></use>
                 </svg>
             </div>
-            <div class="fixed top-0 bottom-0 left-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20">
+            <div id="hamburger-menu" class="hidden top-0 bottom-0 left-0 w-64 min-h-screen overflow-y-auto pt-3 px-4 bg-white dark:bg-zinc-700 z-20">
                 <div
                     class="flex justify-between items-center pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
                     <div class="flex gap-x-3.5">
@@ -261,7 +263,7 @@
                             <use href="#mobile-logo"></use>
                         </svg>
                     </div>
-                    <svg class="w-6 h-6 text-zinc-600 dark:text-white">
+                    <svg id="closeHamburgerMenuBtn" class="w-6 h-6 text-zinc-600 dark:text-white">
                         <use href="#x-mark"></use>
                     </svg>
                 </div>
@@ -333,7 +335,7 @@
                 </ul>
 
                 <div
-                    class="flex flex-col items-start gap-6 text-orange-300 pt-8 px-2.5 mt-8 border-t border-t-gray-100 dark:border-t-white/10 ">
+                    class="flex flex-col items-start gap-6 text-orange-300 py-8 px-2.5 mt-8 border-t border-t-gray-100 dark:border-t-white/10 ">
 
                     <a href="#" class="inline-flex items-center gap-x-2 ">
                         <svg class="w-5 h-5">
@@ -371,16 +373,109 @@
                 </svg>
             </div>
 
-            <div class="flex justify-center items-center">
+            <div id="cart-btn" class="flex justify-center items-center">
                 <svg class="w-6 h-6 text-zinc-700 dark:text-white">
                     <use href="#shopping-cart"></use>
                 </svg>
             </div>
-        </header>
+            <div id="mobile-shopping-cart" class="fixed top-0 bottom-0 right-0 hidden flex-col w-64 min-h-screen overflow-y-auto pt-3 px-4 bg-white dark:bg-zinc-700 z-20">
+                <div
+                    class="flex justify-between items-center pb-5 mb-6 border-b border-b-gray-300 dark:border-b-white/10">
+                    <svg id="cart-close-btn" class="w-6 h-6 text-zinc-600 dark:text-white">
+                        <use href="#x-mark"></use>
+                    </svg>
+                    <span class="text-zinc-700 dark:text-white font-BarlowMedium">Shopping Cart</span>
+                </div>
 
 
+                <div class="child:pb-5 child:mb-5">
+                    <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                        <img src="./images/p2.png" class="w-[90px] h-[90px]" alt="Product-pic">
+                        <div class="flex flex-col justify-between gap-y-1.5 ">
+                            <div class="line-clamp-3">
+                                <h3 class="text-zinc-700 dark:text-white font-BarlowMedium text-sm font-bold">
+                                    Ben Mano Espresso coffee, Prisca model, 250 grams</h3>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-teal-600 dark:text-emerald-500 font-bold text-xs">25%
+                                    OFF</span>
+                                <div class="text-zinc-700 dark:text-white text-base font-bold ">
+                                    <span class="text-xs font-normal">$</span>
+                                    0.75
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-1  border-b border-b-gray-100 dark:border-b-white/10">
+                        <img src="./images/p1.png" class="w-[90px] h-[90px]" alt="Product-pic">
+                        <div class="flex flex-col justify-between gap-y-1.5 ">
+                            <div class="line-clamp-3">
+                                <h3 class="text-zinc-700 dark:text-white font-BarlowMedium text-sm font-bold">
+                                    Ben Mano Espresso coffee, Prisca model, 250 grams</h3>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-teal-600 dark:text-emerald-500 font-bold text-xs">25%
+                                    OFF</span>
+                                <div class="text-zinc-700 dark:text-white text-base font-bold ">
+                                    <span class="text-xs font-normal">$</span>
+                                    0.75
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex items-end gap-x-4 mt-auto mb-8 ">
+                    <a href="#" class="flex items-center justify-center w-28 h-11 text-white bg-teal-600 dark:bg-emerald-500 rounded-xl">Order</a>
+
+                    <div>
+                        <span class="text-gray-300 font-BarlowMedium text-xs tracking-wider">amount payable</span>
+                        <div class="text-zinc-700 dark:text-white text-base font-bold ">
+                            <span class="text-xs">$</span>
+                            0.75
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </header>
+
+
+    <!-- App main -->
+    <main>
+        <section class="home relative h-[200px] xs:h-auto xs:aspect-[2/1] bg-home-mobile lg:aspect-auto lg:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
+            <div class="container relative h-full lg:min-h-screen flex justify-start items-center overflow-y-hidden">
+                <div class="text-white">
+                    <h2 class="font-BarlowBold font-extrabold text-2xl lg:text-6xl/[62px] mb-0.5 md:mb-2">Tanzania Arabica coffee</h2>
+                    <span class="font-BarlowLight text-xl lg:text-5xl/[64px]">A cup of peace</span>
+                    <span class="block w-[100px] h-px lg:h-0.5 bg-orange-300 my-3 md:my-8"></span>
+                    <p class=" max-w-[201px] lg:max-w-[460px] text-xs lg:text-2xl">You must have heard the familiar name of Arabica, Arabica is one of the coffee species that is cultivated in different areas of the coffee belt</p>
+                </div>
+                <div class="circle circle--main circle--lg ">
+                    <div class="circle circle--md">
+                        <div class="circle circle--sm"></div>
+                    </div>
+                </div>
+            </div>
+
+            <svg class=" absolute bottom-0 right-0 left-0 mx-auto hidden md:inline-block text-gray-100 dark:text-zinc-800 w-[100px] h-[22px] ">
+                <use href="#curve"></use>
+            </svg>
+            <div class="absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4 hidden md:flex items-center justify-center w-[30px] h-[30px] border-2 border-orange-300 rounded-full">
+                <svg class="w-4 h-4 text-zinc-700 dark:text-white">
+                    <use href="#chevron-down"></use>
+                </svg>
+            </div>
+        </section>
     </main>
-    <div class="overlay md:hidden bg-black/40 fixed inset-0 z-10 w-full h-full"></div>
+
+
+
+
+
+
+    <div class="overlay hidden lg:hidden bg-black/40 fixed inset-0 z-10 w-full h-full"></div>
     <script src="scripts/app.js"></script>
 </body>
 
