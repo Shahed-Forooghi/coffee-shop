@@ -1,4 +1,4 @@
-# Coffee-Shop mini project is my first project with pure tailwind . 
+# Coffee-Shop mini project is my first project with tailwind . 
 Hello . I am a Shahed and I hope you will take a look at this project of mine.
 This project displays the header of a coffee shop site and I will try to complete it in the future.
 This project is responsive for desktop, laptop, tablet and mobile.
