@@ -7,13 +7,13 @@ I would be happy if you could tell me your opinion about this project.
 
 ## Screenshots
 
-### light mode and in laptop
+### light mode in laptop
 ![Screenshot (12)](https://github.com/Shahed-Forooghi/coffee-shop/assets/157359997/791a1cac-92de-483c-9a9e-6e62e810cde7)
 
 ![Screenshot (18)](https://github.com/Shahed-Forooghi/coffee-shop/assets/157359997/5e4b76db-6393-45a4-af7e-86d1ad1bf4cd)
 
 ---
-### dark mode and mobile
+### dark mode in mobile
 ![Screenshot (15)](https://github.com/Shahed-Forooghi/coffee-shop/assets/157359997/56371fc8-06f9-4e83-a716-adbdb335e8f9)
 
 ---
